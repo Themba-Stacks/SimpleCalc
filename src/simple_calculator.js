@@ -11,13 +11,10 @@ function add (){
 function multiply(){
     var multiplied = 1;
     for (i = 0; i < arguments.length; i++) {
-        multiplied = multiplied*arguments[i];
+        multiplied *= arguments[i];
     }
     return multiplied;
 }
 
 
-module.exports = {
-    add:add,
-    multiply:multiply
-}
+module.exports = {add,multiply};
